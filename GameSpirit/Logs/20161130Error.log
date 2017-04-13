@@ -1,0 +1,247 @@
+﻿============
+2016-11-30 13:17:24
+2016-11-30 13:17:24:850705--Error----EventId：42000--通用错误信息======AddServiceRecordClient;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Boolean]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.BLL.TB_ServiceRecord.tb_servicerecordBLL.AddServiceRecordClient(DTOServiceRecord dto)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass0_0.<AddServiceRecordClient>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 15:35:34
+2016-11-30 15:35:34:805165--Error----EventId：42000--通用错误信息======GetQABaseInfoById;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Mode.DTOQABaseInfo]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.BLL.TB_QABase.tb_qabaseBLL.GetQABaseInfoById(ParamQABaseId Param)
+   在 GameSpiritSystem.WebAPI.Controllers.QABaseController.<>c__DisplayClass1_0.<GetQABaseInfoById>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 15:35:39
+2016-11-30 15:35:39:242352--Error----EventId：42000--通用错误信息======GetQABaseInfoById;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Mode.DTOQABaseInfo]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.BLL.TB_QABase.tb_qabaseBLL.GetQABaseInfoById(ParamQABaseId Param)
+   在 GameSpiritSystem.WebAPI.Controllers.QABaseController.<>c__DisplayClass1_0.<GetQABaseInfoById>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 15:38:22
+2016-11-30 15:38:22:346427--Error----EventId：42000--通用错误信息======GetQABaseInfoById;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Mode.DTOQABaseInfo]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.BLL.TB_QABase.tb_qabaseBLL.GetQABaseInfoById(ParamQABaseId Param)
+   在 GameSpiritSystem.WebAPI.Controllers.QABaseController.<>c__DisplayClass1_0.<GetQABaseInfoById>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 16:47:11
+2016-11-30 16:47:11:513458--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:07:10
+2016-11-30 17:07:10:287567--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:07:12
+2016-11-30 17:07:12:553062--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:07:15
+2016-11-30 17:07:15:302904--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:07:38
+2016-11-30 17:07:38:321160--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:10:01
+2016-11-30 17:10:01:424958--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:10:12
+2016-11-30 17:10:12:721182--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:12:26
+2016-11-30 17:12:26:906526--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:12:49
+2016-11-30 17:12:49:949291--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:13:46
+2016-11-30 17:13:46:437772--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:14:43
+2016-11-30 17:14:43:641901--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:14:52
+2016-11-30 17:14:52:875404--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:15:45
+2016-11-30 17:15:45:231371--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:15:47
+2016-11-30 17:15:47:262413--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:17:00
+2016-11-30 17:17:00:367805--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:17:11
+2016-11-30 17:17:11:554386--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:18:36
+2016-11-30 17:18:36:188572--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:18:51
+2016-11-30 17:18:51:141940--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:25:59
+2016-11-30 17:25:59:565298--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:26:05
+2016-11-30 17:26:05:018248--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:26:26
+2016-11-30 17:26:26:681538--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:27:01
+2016-11-30 17:27:01:354608--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:27:07
+2016-11-30 17:27:07:916885--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:27:09
+2016-11-30 17:27:09:948070--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:30:22
+2016-11-30 17:30:22:953684--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:30:53
+2016-11-30 17:30:53:191992--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:31:14
+2016-11-30 17:31:14:553086--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:35:39
+2016-11-30 17:35:39:410846--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:48:21
+2016-11-30 17:48:21:506457--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:48:22
+2016-11-30 17:48:22:787720--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:48:29
+2016-11-30 17:48:29:039713--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:48:33
+2016-11-30 17:48:33:649118--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:49:52
+2016-11-30 17:49:52:204385--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:49:58
+2016-11-30 17:49:58:688725--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:50:00
+2016-11-30 17:50:00:469986--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:50:06
+2016-11-30 17:50:06:423149--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:50:44
+2016-11-30 17:50:44:033257--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:50:45
+2016-11-30 17:50:45:298874--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:50:46
+2016-11-30 17:50:46:330119--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 17:51:03
+2016-11-30 17:51:03:777457--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 18:10:47
+2016-11-30 18:10:47:091694--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.Mode.DTOServiceRecord..ctor(TbServicerecordEO EO)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 18:10:48
+2016-11-30 18:10:48:544856--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.Mode.DTOServiceRecord..ctor(TbServicerecordEO EO)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 18:10:49
+2016-11-30 18:10:49:654260--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[GameSpiritSystem.Mode.DTOServiceRecord,GameSpiritSystem.Mode.DTOServiceReply]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.Mode.DTOServiceRecord..ctor(TbServicerecordEO EO)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-30 18:12:06
+2016-11-30 18:12:06:395789--Error--上传照片失败 错误信息为System.Exception: 读取fastDFS配置文件，初始化连接tracker失败已添加了具有相同键的项。
+   在 FastDFS.Client.FastDFSClient..ctor(String configPath)
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.ImgUpload(PamaImage Param)

@@ -1,0 +1,26 @@
+﻿============
+2016-12-20 16:54:06
+2016-12-20 16:54:06:591614--Error----EventId：47999--前端一般错误信息======验证用户权限失败;MethodName=CustomAuthorizeAttribute;Params:Request：Method: GET, RequestUri: 'http://66.ourgame.com/GameSpirit/BulletinReadRecord/GetReadInfoTotal', Version: 1.1, Content: System.Web.Http.WebHost.HttpControllerHandler+LazyStreamContent, Headers:
+{
+  Connection: keep-alive
+  Accept: text/html
+  Accept: application/xhtml+xml
+  Accept: application/xml; q=0.9
+  Accept: image/webp
+  Accept: */*; q=0.8
+  Accept-Encoding: gzip
+  Accept-Encoding: deflate
+  Accept-Encoding: sdch
+  Accept-Language: zh-CN
+  Accept-Language: zh; q=0.8
+  Cookie: UserLogin_ServerId=eYH2hH4oYEajmcmLtWEeXCFx7QR2ux1DAkIdE/0wQg8NN/IvVpBAsCW0fchv4iwjlV85iipJUxLeXtcGZD7aXg==; rtcost=oizL1EPVpaABBuMAXZFbHg==
+  Host: 66.ourgame.com
+  User-Agent: Mozilla/5.0
+  User-Agent: (Windows NT 6.1; Win64; x64)
+  User-Agent: AppleWebKit/537.36
+  User-Agent: (KHTML, like Gecko)
+  User-Agent: Chrome/55.0.2883.87
+  User-Agent: Safari/537.36
+  Upgrade-Insecure-Requests: 1
+},Args：{};Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.WebAPI.Services.TokenAuthorizeAttribute.OnAuthorization(HttpActionContext actionContext)

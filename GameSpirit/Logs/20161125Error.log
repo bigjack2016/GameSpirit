@@ -1,0 +1,6 @@
+﻿============
+2016-11-25 14:13:19
+2016-11-25 14:13:19:754389--Error----EventId：42000--通用错误信息======AddServiceRecordClient;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Boolean]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.BLL.TB_ServiceRecord.tb_servicerecordBLL.AddServiceRecordClient(DTOServiceRecord dto)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass0_0.<AddServiceRecordClient>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)

@@ -1,0 +1,198 @@
+﻿============
+2016-11-24 09:58:48
+2016-11-24 09:58:47:892216--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 09:59:08
+2016-11-24 09:59:08:814434--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 09:59:29
+2016-11-24 09:59:29:861714--Error----EventId：42000--通用错误信息======GetVersiontrailerList;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOVersionTrailer]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_VersionTrailer.tb_versiontrailerBLL.GetVersiontrailerList()
+   在 GameSpiritSystem.WebAPI.Controllers.VersionTrailerController.<>c.<GetVersiontrailerList>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 09:59:50
+2016-11-24 09:59:50:877877--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:00:11
+2016-11-24 10:00:11:909666--Error----EventId：42000--通用错误信息======GetVersiontrailerList;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOVersionTrailer]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_VersionTrailer.tb_versiontrailerBLL.GetVersiontrailerList()
+   在 GameSpiritSystem.WebAPI.Controllers.VersionTrailerController.<>c.<GetVersiontrailerList>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:00:32
+2016-11-24 10:00:32:926065--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:00:53
+2016-11-24 10:00:53:958123--Error----EventId：42000--通用错误信息======GetVersiontrailerList;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOVersionTrailer]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_VersionTrailer.tb_versiontrailerBLL.GetVersiontrailerList()
+   在 GameSpiritSystem.WebAPI.Controllers.VersionTrailerController.<>c.<GetVersiontrailerList>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:01:14
+2016-11-24 10:01:14:974154--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:01:36
+2016-11-24 10:01:36:037434--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:04:09
+2016-11-24 10:04:09:197536--Error----EventId：42000--通用错误信息======GetVersiontrailerList;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOVersionTrailer]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_VersionTrailer.tb_versiontrailerBLL.GetVersiontrailerList()
+   在 GameSpiritSystem.WebAPI.Controllers.VersionTrailerController.<>c.<GetVersiontrailerList>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-24 10:04:30
+2016-11-24 10:04:30:213463--Error----EventId：42000--通用错误信息======GetQABaseCarouselFigure;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOCarouselFigureList],System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOQABaseQuestion]]]];Params:;Ex:ServiceStack.Redis.RedisException: could not connect to redis Instance at 172.28.14.133:6379 ---> System.Net.Sockets.SocketException: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 172.28.14.133:6379
+   在 System.Net.Sockets.Socket.Connect(IPAddress[] addresses, Int32 port)
+   在 System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 ServiceStack.Redis.RedisNativeClient.Connect()
+   在 ServiceStack.Redis.RedisNativeClient.AssertConnectedSocket()
+   在 ServiceStack.Redis.RedisNativeClient.SendCommand(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.SendExpectSuccess(Byte[][] cmdWithBinaryArgs)
+   在 ServiceStack.Redis.RedisNativeClient.set_Db(Int32 value)
+   在 ServiceStack.Redis.PooledRedisClientManager.GetClient()
+   在 GameSpiritSystem.Utility.Cache.RedisCache.ContainsKey(String key)
+   在 GameSpiritSystem.Utility.Cache.RedisCache.GetList[T](String key, Func`2 getCacheItemFunc, Nullable`1 expiresIn, Object[] args)
+   在 GameSpiritSystem.BLL.TB_CarouselFigure.tb_carouselfigureBLL.GetCarouselfigureList()
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c.<GetCarouselFigureQABase>b__0_0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)

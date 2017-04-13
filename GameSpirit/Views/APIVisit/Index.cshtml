@@ -1,0 +1,586 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Scripts.Render("~/bundles/jquery")
+
+<script>
+    //获取版本先知信息集合
+    function GetVersiontrailerList() {
+        var obj = { "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            //url: "/VersionTrailer/GetVersiontrailerList",
+            url: "http://66.ourgame.com/GameSpirit/VersionTrailer/GetVersiontrailerList",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //获取轮播图信息集合
+    function GetCarouselFigureList() {
+        var obj = { "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/CarouselFigure/GetCarouselFigureList",
+            //url: "http://66.ourgame.com/GameSpirit/CarouselFigure/GetCarouselFigureList",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //获取常见问题名称集合
+    function GetQABaseQuestionList() {
+        var obj = { "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/QABase/GetQABaseQuestionList",
+            //url: "http://66.ourgame.com/GameSpirit/QABase/GetQABaseQuestionList",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据常见问题Id获取常见问题信息
+    function GetQABaseInfoById() {
+        var json = { "QABaseId": parseInt("1") };
+
+        $.ajax({
+            type: "POST",
+            //url: "/QABase/GetQABaseInfoById",
+            url: "http://66.ourgame.com/GameSpirit/QABase/GetQABaseInfoById",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: json, 
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //添加客户端服务记录信息
+    function AddServiceRecordClient()
+    {
+        var obj = { "TypeId": 1, "AccountName": "admin", "Phone": 13888888888, "Content": "客户记录测试1", "IsReply": false, "IsSolve": false, "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/ServiceRecord/AddServiceRecordClient",
+            //url: "http://66.ourgame.com/GameSpirit/ServiceRecord/AddServiceRecordClient",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据用户获取服务记录集合
+    function GetServiceRecordNewsletter() {
+        var obj = { "KId": null, "AccountName": decodeURIComponent("%E7%A5%8E%E7%A5%8E"), "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/ServiceRecord/GetServiceRecordNewsletter",
+            //url: "http://66.ourgame.com/GameSpirit/ServiceRecord/GetServiceRecordNewsletter",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据用户获取服务记录信息
+    function GetServiceRecordAccountName() {
+        var obj = { "KId": null, "AccountName": "admin", "Token": "CAEQx%252B6OwgUaATAi6APedyMSHrrbeUAb%252BinD4ts1YdFWffgc3JnFeVj3TdIaGH86561Qw%252FNMiAp%252FRZY0GldE%252Bmy7EK8LrW99W%252BVYwZgAHH0%252F9p07Ov5NGGPAXc5ZUuHOQpWXLJ%252FlUXBX0ubXkhOVmsMxfbAUSiZc9PHHF7vW3mnqxbj%252Fzcp2oozGiWb0hXYBii6DJ4VzD297KAfXw%252BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%252BbWhQv9XOWGUrVbX7o%252FiAna0pKosk%252BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%252Fw4icAWGQay19eS3Gf7BP3PeGJ%252FQFqXnCABa2Pdz14nJQnUCfBxpFfGankm4dSVCUqtqd%252FcDhEXDcr5J8tmdJ7c0gxVYaLA%252BNKi6O46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%252FNj2i67ZGlaETmOOZOHr1RhkVHVGRfaYs2U%252FpMIEDrUxYR1macFOw81UNzqsVxwu6IceZy%252Bb1f%252FCPT0csAyQA71wSN7NXtbEEk27kzWtliqmNkkxgD9G9yS%252BYmQ5Hp2Ie1qpM5rUdDsPJHg%253D%253D", "RoleName": "游戏精灵" };
+
+        $.ajax({
+            type: "POST",
+            url: "/ServiceRecord/GetServiceRecordAccountName",
+            //url: "http://66.ourgame.com/GameSpirit/ServiceRecord/GetServiceRecordAccountName",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据KId获取服务记录信息
+    function GetServiceRecordKId() {
+        var obj = { "KId": 1, "AccountName": null };
+
+        $.ajax({
+            type: "POST",
+            //url: "/ServiceRecord/GetServiceRecordKId",
+            url: "http://66.ourgame.com/GameSpirit/ServiceRecord/GetServiceRecordKId",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //上传图片
+    function ImgUpload() {
+        var obj = { "Base64": "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", "Extension": "png" };
+
+        $.ajax({
+            type: "POST",
+            url: "http://66.ourgame.com/GameSpirit/Complex/ImgUpload",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(obj),
+            dataType: "json",
+            success: function (response) {
+                if (response != null ) {
+                    alert(response);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //获取游戏列表集合
+    function GetSpiritGameList() {
+        $.ajax({
+            type: "POST",
+            url: "/GameList/GetSpiritGameList",
+            //url: "http://66.ourgame.com/GameSpirit/GameList/GetSpiritGameList",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            data: null,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据KId更新解决状态
+    function UpdataSolveStateServiceRecord() {
+        var obj = { "KId": 2, "AccountName": "admin", "IsSolve": true, "Token": "CAEQx%252B6OwgUaATAi6APedyMSHrrbeUAb%252BinD4ts1YdFWffgc3JnFeVj3TdIaGH86561Qw%252FNMiAp%252FRZY0GldE%252Bmy7EK8LrW99W%252BVYwZgAHH0%252F9p07Ov5NGGPAXc5ZUuHOQpWXLJ%252FlUXBX0ubXkhOVmsMxfbAUSiZc9PHHF7vW3mnqxbj%252Fzcp2oozGiWb0hXYBii6DJ4VzD297KAfXw%252BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%252BbWhQv9XOWGUrVbX7o%252FiAna0pKosk%252BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%252Fw4icAWGQay19eS3Gf7BP3PeGJ%252FQFqXnCABa2Pdz14nJQnUCfBxpFfGankm4dSVCUqtqd%252FcDhEXDcr5J8tmdJ7c0gxVYaLA%252BNKi6O46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%252FNj2i67ZGlaETmOOZOHr1RhkVHVGRfaYs2U%252FpMIEDrUxYR1macFOw81UNzqsVxwu6IceZy%252Bb1f%252FCPT0csAyQA71wSN7NXtbEEk27kzWtliqmNkkxgD9G9yS%252BYmQ5Hp2Ie1qpM5rUdDsPJHg%253D%253D", "RoleName": "游戏精灵" };
+
+        $.ajax({
+            type: "POST",
+            //url: "/ServiceRecord/UpdataSolveState",
+            url: "http://66.ourgame.com/GameSpirit/ServiceRecord/UpdataSolveState",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据KId更新解决状态
+    function UpdataSolveStateProblem() {
+        var obj = { "KId": 2, "IsSolve": true, "Token": "CAEQx%252B6OwgUaATAi6APedyMSHrrbeUAb%252BinD4ts1YdFWffgc3JnFeVj3TdIaGH86561Qw%252FNMiAp%252FRZY0GldE%252Bmy7EK8LrW99W%252BVYwZgAHH0%252F9p07Ov5NGGPAXc5ZUuHOQpWXLJ%252FlUXBX0ubXkhOVmsMxfbAUSiZc9PHHF7vW3mnqxbj%252Fzcp2oozGiWb0hXYBii6DJ4VzD297KAfXw%252BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%252BbWhQv9XOWGUrVbX7o%252FiAna0pKosk%252BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%252Fw4icAWGQay19eS3Gf7BP3PeGJ%252FQFqXnCABa2Pdz14nJQnUCfBxpFfGankm4dSVCUqtqd%252FcDhEXDcr5J8tmdJ7c0gxVYaLA%252BNKi6O46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%252FNj2i67ZGlaETmOOZOHr1RhkVHVGRfaYs2U%252FpMIEDrUxYR1macFOw81UNzqsVxwu6IceZy%252Bb1f%252FCPT0csAyQA71wSN7NXtbEEk27kzWtliqmNkkxgD9G9yS%252BYmQ5Hp2Ie1qpM5rUdDsPJHg%253D%253D", "RoleName": "游戏精灵" };
+
+        $.ajax({
+            type: "POST",
+            //url: "/Problem/UpdataSolveState",
+            url: "http://66.ourgame.com/GameSpirit/Problem/UpdataSolveState",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据问题Id获取问题信息
+    function GetProblemInfoById() {
+        var obj = { "ProblemId": 1, "Token": "CAEQx%252B6OwgUaATAi6APedyMSHrrbeUAb%252BinD4ts1YdFWffgc3JnFeVj3TdIaGH86561Qw%252FNMiAp%252FRZY0GldE%252Bmy7EK8LrW99W%252BVYwZgAHH0%252F9p07Ov5NGGPAXc5ZUuHOQpWXLJ%252FlUXBX0ubXkhOVmsMxfbAUSiZc9PHHF7vW3mnqxbj%252Fzcp2oozGiWb0hXYBii6DJ4VzD297KAfXw%252BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%252BbWhQv9XOWGUrVbX7o%252FiAna0pKosk%252BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%252Fw4icAWGQay19eS3Gf7BP3PeGJ%252FQFqXnCABa2Pdz14nJQnUCfBxpFfGankm4dSVCUqtqd%252FcDhEXDcr5J8tmdJ7c0gxVYaLA%252BNKi6O46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%252FNj2i67ZGlaETmOOZOHr1RhkVHVGRfaYs2U%252FpMIEDrUxYR1macFOw81UNzqsVxwu6IceZy%252Bb1f%252FCPT0csAyQA71wSN7NXtbEEk27kzWtliqmNkkxgD9G9yS%252BYmQ5Hp2Ie1qpM5rUdDsPJHg%253D%253D", "RoleName": "游戏精灵" };
+
+        $.ajax({
+            type: "POST",
+            url: "/Problem/GetProblemInfoById",
+            //url: "http://66.ourgame.com/GameSpirit/Problem/GetProblemInfoById",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //添加客户端公告记录读取信息
+    function AddBulletinReadRecordClient() {
+        var obj = { "BulletinType": 1, "BulletinKId": [1, 2, 3], "AccountName": "admin", "Token": "CAEQx%252B6OwgUaATAi6APedyMSHrrbeUAb%252BinD4ts1YdFWffgc3JnFeVj3TdIaGH86561Qw%252FNMiAp%252FRZY0GldE%252Bmy7EK8LrW99W%252BVYwZgAHH0%252F9p07Ov5NGGPAXc5ZUuHOQpWXLJ%252FlUXBX0ubXkhOVmsMxfbAUSiZc9PHHF7vW3mnqxbj%252Fzcp2oozGiWb0hXYBii6DJ4VzD297KAfXw%252BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%252BbWhQv9XOWGUrVbX7o%252FiAna0pKosk%252BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%252Fw4icAWGQay19eS3Gf7BP3PeGJ%252FQFqXnCABa2Pdz14nJQnUCfBxpFfGankm4dSVCUqtqd%252FcDhEXDcr5J8tmdJ7c0gxVYaLA%252BNKi6O46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%252FNj2i67ZGlaETmOOZOHr1RhkVHVGRfaYs2U%252FpMIEDrUxYR1macFOw81UNzqsVxwu6IceZy%252Bb1f%252FCPT0csAyQA71wSN7NXtbEEk27kzWtliqmNkkxgD9G9yS%252BYmQ5Hp2Ie1qpM5rUdDsPJHg%253D%253D", "RoleName": "游戏精灵" };
+
+        $.ajax({
+            type: "POST",
+            url: "/BulletinReadRecord/AddBulletinReadRecordClient",
+            //url: "http://66.ourgame.com/GameSpirit/BulletinReadRecord/AddBulletinReadRecordClient",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //获取用户总体信息读取状况
+    function GetReadInfoTotal() {
+        var obj = { "AccountName": decodeURIComponent("%E7%A5%8E%E7%A5%8E"), "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeQ%2FjIQ%2BscC1m9GpNaR9ZPRRG9C7NsCXz0niqwhxRAZB15AY8iMuXvd1E%2Bmy7EK8LrW99W%2BVYwZgAgNtIw1rgz%2FGbSQPsYK165OHOQpWXLJ%2FlUXBX0ubXkhPRHLrrEY0rf0pUBshrY9YAT4d65xhsqy0lmha%2BpJntHlw9ILQsQYu%2FD297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnUQGBvQNqm2drz2eBk4OuegN82fWXDRyMQuSFu58ivWctIY2Vg9w2zqO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmL%2FAAlWXFdbsKBUU8UO8%2BuCGGmZm3ToEfVF5NFJfEyc7DGo9sb2g%2Bw%2BZy%2Bb1f%2FCPT5fFx%2F%2B%2FHtPQBowiPnXqLNDkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/BulletinReadRecord/GetReadInfoTotal",
+            //url: "http://66.ourgame.com/GameSpirit/BulletinReadRecord/GetReadInfoTotal",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //添加客户端问题信息评价信息
+    function AddProblemSolveClient() {
+        var obj = { "ProblemKId": [1, 2, 3, 4, 5], "AccountName": "admin", "IsSolve": true, "Token": decodeBase64("CAEQx%252B6OwgUaATAi6APedyMSHrrbeUAb%252BinD4ts1YdFWffgc3JnFeVj3TdIaGH86561Qw%252FNMiAp%252FRZY0GldE%252Bmy7EK8LrW99W%252BVYwZgAHH0%252F9p07Ov5NGGPAXc5ZUuHOQpWXLJ%252FlUXBX0ubXkhOVmsMxfbAUSiZc9PHHF7vW3mnqxbj%252Fzcp2oozGiWb0hXYBii6DJ4VzD297KAfXw%252BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%252BbWhQv9XOWGUrVbX7o%252FiAna0pKosk%252BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%252Fw4icAWGQay19eS3Gf7BP3PeGJ%252FQFqXnCABa2Pdz14nJQnUCfBxpFfGankm4dSVCUqtqd%252FcDhEXDcr5J8tmdJ7c0gxVYaLA%252BNKi6O46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%252FNj2i67ZGlaETmOOZOHr1RhkVHVGRfaYs2U%252FpMIEDrUxYR1macFOw81UNzqsVxwu6IceZy%252Bb1f%252FCPT0csAyQA71wSN7NXtbEEk27kzWtliqmNkkxgD9G9yS%252BYmQ5Hp2Ie1qpM5rUdDsPJHg%253D%253D"), "RoleName": "游戏精灵" };
+
+        $.ajax({
+            type: "POST",
+            url: "/ProblemSolve/AddProblemSolveClient",
+            //url: "http://66.ourgame.com/GameSpirit/ProblemSolve/AddProblemSolveClient",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //根据用户读取问题评价记录
+    function GetProblemSolve() {
+        var obj = { "AccountName": "admin", "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/ProblemSolve/GetProblemSolve",
+            //url: "http://66.ourgame.com/GameSpirit/ProblemSolve/GetProblemSolve",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+
+    //获取反馈类别集合
+    function GetFeedbackTypeList() {
+        var obj = { "Token": decodeURIComponent("CAEQx%2B6OwgUaATAi6APedyMSHrrbeTyHuZzNkqgZA9EBFU1aIIP%2F%2BWS5B3UGKlZ%2BXS22aLtzA8mHrM4ijjxE%2Bmy7EK8LrW99W%2BVYwZgA3gz9ktCwFgfk5tfyJeebteHOQpWXLJ%2FlUXBX0ubXkhOpXefEh2eYMrnn0h794Xld%2B9tiurT%2Fa1LagF3DVVMJSqsJrEGmeer2D297KAfXw%2BFrXmR73Wwo1xziLUONTRhdWtY3i9tOBh%2BbWhQv9XOWGUrVbX7o%2FiAna0pKosk%2BWrXQr0K8j9iBz7QKJWS0MWNoHOItQ41NGF0c4i1DjU0YXeHM3P52%2Fw4icAWGQay19eS3Gf7BP3PeGJ%2FQFqXnCABa2Pdz14nJQnVCLFxLseTl1NFK14xkYHldcvkdK07GEdmAdzbJbNVaibQFIotsqCYrO46ErwvhIKrArMhyXmsb5RXsrhylEWbMRdm2es52EwEc4i1DjU0YXRziLUONTRhdpUyLOhNt0fUc4i1DjU0YXRziLUONTRhdvMXJxGA%2FNj2i67ZGlaETmM3g2zitR8aP4MLfV%2Bq0cPxghFermq3wEp8mI2KRATn8jvUqLqHmqtyZy%2Bb1f%2FCPT3YzxQoC0cu9k34mwJPy%2BMPkzWtliqmNkkxgD9G9yS%2BYmQ5Hp2Ie1qpM5rUdDsPJHg%3D%3D"), "RoleName": decodeURIComponent("%E7%A5%8E%E7%A5%8E") };
+
+        $.ajax({
+            type: "POST",
+            url: "/FeedbackType/GetFeedbackTypeList",
+            //url: "http://66.ourgame.com/GameSpirit/FeedbackType/GetFeedbackTypeList",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            //data: JSON.stringify(obj),
+            data: obj,
+            dataType: "json",
+            success: function (response) {
+                if (response != null && response.State == 1) {
+                    var value = response.Value;
+                    alert(response.State);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert(XMLHttpRequest.status);
+                //alert(XMLHttpRequest.readyState);
+                //alert(textStatus);
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+                //调用本次AJAX请求时传递的options参数
+                //alert(XMLHttpRequest.status);
+                //alert(textStatus);
+            }
+        });
+    }
+</script>
+
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li><a class="icon" href="#" onclick="GetVersiontrailerList();" target="_self" max="true" warn="API调用"><span>获取版本先知信息集合</span></a></li>
+            <li><a class="icon" href="#" onclick="GetCarouselFigureList();" target="_self" max="true" warn="API调用"><span>轮播图信息集合</span></a></li>
+            <li><a class="icon" href="#" onclick="GetQABaseQuestionList();" target="_self" max="true" warn="API调用"><span>获取常见问题名称集合</span></a></li>
+            <li><a class="icon" href="#" onclick="GetQABaseInfoById();" target="_self" max="true" warn="API调用"><span>根据常见问题Id获取常见问题信息</span></a></li>
+            <li><a class="icon" href="#" onclick="AddServiceRecordClient();" target="_self" max="true" warn="API调用"><span>添加客户端服务记录信息</span></a></li>
+            <li><a class="icon" href="#" onclick="GetServiceRecordNewsletter();" target="_self" max="true" warn="API调用"><span>根据用户获取服务记录集合</span></a></li>
+            <li><a class="icon" href="#" onclick="GetServiceRecordAccountName();" target="_self" max="true" warn="API调用"><span>根据用户获取服务记录信息</span></a></li>
+            <li><a class="icon" href="#" onclick="GetServiceRecordKId();" target="_self" max="true" warn="API调用"><span>根据KId获取服务记录信息</span></a></li>
+            <li><a class="icon" href="#" onclick="ImgUpload();" target="_self" max="true" warn="API调用"><span>上传图片</span></a></li>
+            <li><a class="icon" href="#" onclick="GetSpiritGameList();" target="_self" max="true" warn="API调用"><span>获取游戏列表集合</span></a></li>
+            <li><a class="icon" href="#" onclick="UpdataSolveStateServiceRecord();" target="_self" max="true" warn="API调用"><span>根据KId更新解决状态（服务记录）</span></a></li>
+            <li><a class="icon" href="#" onclick="UpdataSolveStateProblem();" target="_self" max="true" warn="API调用"><span>根据KId更新解决状态（问题）</span></a></li>
+            <li><a class="icon" href="#" onclick="GetProblemInfoById();" target="_self" max="true" warn="API调用"><span>根据问题Id获取问题信息</span></a></li>
+            <li><a class="icon" href="#" onclick="AddBulletinReadRecordClient();" target="_self" max="true" warn="API调用"><span>添加客户端公告记录读取信息</span></a></li>
+            <li><a class="icon" href="#" onclick="GetReadInfoTotal();" target="_self" max="true" warn="API调用"><span>获取用户总体信息读取状况</span></a></li>
+            <li><a class="icon" href="#" onclick="AddProblemSolveClient();" target="_self" max="true" warn="API调用"><span>添加客户端问题信息评价信息</span></a></li>
+            <li><a class="icon" href="#" onclick="GetProblemSolve();" target="_self" max="true" warn="API调用"><span>根据用户读取问题评价记录</span></a></li>
+            <li><a class="icon" href="#" onclick="GetFeedbackTypeList();" target="_self" max="true" warn="API调用"><span>获取反馈类别集合</span></a></li>
+        </ul>
+    </div>
+</div>

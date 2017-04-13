@@ -1,0 +1,50 @@
+﻿============
+2016-11-29 11:15:01
+2016-11-29 11:15:01:412594--Error----EventId：42000--通用错误信息======AddServiceRecordClient;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Utility.OperationUtil.EntityUtil`2[System.Collections.Generic.IList`1[GameSpiritSystem.Mode.DTOServiceRecordNewsletter],GameSpiritSystem.Mode.DTOServiceRecordState]]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.BLL.TB_ServiceRecord.tb_servicerecordBLL.GetServiceRecordNewsletter(ParamServiceRecord Param)
+   在 GameSpiritSystem.WebAPI.Controllers.ComplexController.<>c__DisplayClass1_0.<GetServiceRecordNewsletter>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-29 17:00:16
+2016-11-29 17:00:16:911190--Error----EventId：42000--通用错误信息======AddServiceRecordClient;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Boolean]];Params:;Ex:MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'SessionGroup' in 'field list'
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   在 TinyFx.Data.CommandWrapper.ExecuteScalar()
+   在 TinyFx.Data.Database.<ExecScalar>b__0(CommandWrapper c)
+   在 TinyFx.Data.Database.ExecuteCommand[T](CommandWrapper command, Func`2 action)   在 TinyFx.ExceptionUtil.PreserveStackTrace(Exception ex, Boolean throwFirst)
+   在 TinyFx.Data.Database.ExecuteCommand[T](CommandWrapper command, Func`2 action)
+   在 TinyFx.Data.Database.ExecScalar(CommandWrapper command)
+   在 TinyFx.Data.DaoBase.ExecScalar(TransactionManager tm)
+   在 GameSpiritSystem.BLL.TB_ServiceRecord.tb_servicerecordBLL.AddServiceRecordClient(DTOServiceRecord dto)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass0_0.<AddServiceRecordClient>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-29 17:00:28
+2016-11-29 17:00:28:129721--Error----EventId：42000--通用错误信息======AddServiceRecordClient;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[System.Boolean]];Params:;Ex:MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'SessionGroup' in 'field list'
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteScalar()
+   在 TinyFx.Data.CommandWrapper.ExecuteScalar()
+   在 TinyFx.Data.Database.<ExecScalar>b__0(CommandWrapper c)
+   在 TinyFx.Data.Database.ExecuteCommand[T](CommandWrapper command, Func`2 action)   在 TinyFx.ExceptionUtil.PreserveStackTrace(Exception ex, Boolean throwFirst)
+   在 TinyFx.Data.Database.ExecuteCommand[T](CommandWrapper command, Func`2 action)
+   在 TinyFx.Data.Database.ExecScalar(CommandWrapper command)
+   在 TinyFx.Data.DaoBase.ExecScalar(TransactionManager tm)
+   在 GameSpiritSystem.BLL.TB_ServiceRecord.tb_servicerecordBLL.AddServiceRecordClient(DTOServiceRecord dto)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass0_0.<AddServiceRecordClient>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)
+============
+2016-11-29 17:43:10
+2016-11-29 17:43:10:894176--Error----EventId：42000--通用错误信息======GetServiceRecordKId;MethodName=System.Func`1[GameSpiritSystem.Utility.OperationUtil.OperationResult`1[GameSpiritSystem.Mode.DTOServiceRecord]];Params:;Ex:System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GameSpiritSystem.Mode.DTOServiceRecord..ctor(TbServicerecordEO EO)
+   在 GameSpiritSystem.WebAPI.Controllers.ServiceRecordController.<>c__DisplayClass3_0.<GetServiceRecordKId>b__0()
+   在 GameSpiritSystem.BLL.LogUtil.OperationResultUtilPlus.TryCatch[T](Func`1 callback, Object parameters, String strErrorDisplayMsg, String strErrorLogMsg)

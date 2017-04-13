@@ -1,0 +1,54 @@
+<!DOCTYPEhtmlPUBLIC"-//WAPFORUM//DTDXHTMLMobile1.0//EN""http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>gamegenius</title>
+      <style>
+          .iScrollIndicator{
+              background:rgba(0,0,0,.6)!important;
+              border:none!important;
+          }
+      </style>
+    <script src="./static/js/iscroll.js"></script>
+  </head>
+  <body>
+      <app></app>
+      <audio controls="controls" style="display:none;">
+        <source src="static/images/vedio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+      <script>
+          var audio = document.querySelector('audio');
+          var MyScroll = {};
+          var timer = '';
+          function iscl(){
+              timer = setInterval(function(){
+                  if(document.querySelector('#wp_container')){
+                      clearInterval(timer);
+                      MyScroll = new IScroll('#wp_container',{
+                          scrollbars: true,
+                          resizePolling:60,
+                          momentum:false,
+                          useTransition:false
+                      });
+                      setTimeout(function(){
+                          MyScroll.refresh();
+                      },300);
+                      window.onreisze = function(){
+                          MyScroll.refresh();
+                      }
+                      window.onhashchange = function(){
+                          MyScroll.destroy();
+                          iscl();
+                      }
+                  }
+              },10)
+          }
+          iscl();
+
+
+      </script>
+      <script src="dist/build.js"></script>
+  </body>
+</html>
